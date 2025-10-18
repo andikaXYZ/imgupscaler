@@ -5,7 +5,7 @@ A web-based application for upscaling images with tracing and conversion feature
 ## Table of Contents
 - [Features](#features)
 - [Technology Comparison](#technology-comparison)
-- [Adobe Stock Quality Notice](#adobe-stock-quality-notice)
+- [Quality & Use Cases](#quality--use-cases)
 - [Installation](#installation)
 - [Usage Guide](#usage-guide)
 - [Technical Details](#technical-details)
@@ -62,14 +62,14 @@ A web-based application for upscaling images with tracing and conversion feature
 | **Speed** | ⚡⚡⚡ Very fast |
 | **Best for** | Quick resizing, web images, previews |
 
-### Upscayl (AI-Powered Alternative)
+### AI-Powered Alternatives
 
 | Aspect | Details |
 |--------|---------|
-| **Technology** | Real-ESRGAN AI Model + NCNN + Vulkan |
+| **Technology** | AI Models (Real-ESRGAN, etc.) + GPU acceleration |
 | **Method** | Deep Learning Neural Networks |
 | **Processing** | Desktop application, GPU-accelerated |
-| **Requirements** | Vulkan-compatible GPU |
+| **Requirements** | Vulkan-compatible GPU or powerful hardware |
 | **AI/ML** | ✅ Trained on millions of images |
 | **Quality** | ⭐⭐⭐⭐⭐ Professional AI enhancement |
 | **Speed** | ⚡⚡ Moderate (depends on GPU) |
@@ -84,59 +84,67 @@ A web-based application for upscaling images with tracing and conversion feature
 - Fast and lightweight
 - No installation required
 
-**AI Upscaling (Upscayl/Real-ESRGAN):**
+**AI Upscaling (Alternative Tools):**
 - "Guesses" and generates new details using AI
 - Can enhance textures and edges
 - More natural-looking results
 - Requires powerful hardware
 - Desktop application installation needed
 
-## Adobe Stock Quality Notice
+## Quality & Use Cases
 
-### ❌ This Application (Mathematical Upscaling)
+### ✅ Best Use Cases for This Tool
 
-**NOT SUITABLE** for Adobe Stock submissions because:
-- Only stretches existing pixels mathematically
-- Cannot generate new detail or information
-- Results appear artificially enlarged
-- May show blur, artifacts, or lack of sharpness
-- Adobe Stock reviewers can detect upscaled images
-
-**Suitable for:**
-- Web graphics and social media
+**Perfect for:**
+- Web graphics and social media images
 - Quick previews and mockups
+- Digital presentations
 - Non-commercial projects
 - Learning and experimentation
+- Batch processing multiple images quickly
+- Privacy-sensitive images (local processing)
 
-### ⚠️ AI Upscaling (Upscayl/Real-ESRGAN)
+**Recommended Settings:**
+- Scale factor: 2-4x for best results
+- Use Bicubic interpolation for photos
+- Enable sharpening for clarity
+- PNG format for lossless quality
 
-**BETTER but NOT GUARANTEED** for Adobe Stock because:
-- AI can generate plausible details
-- Results are sharper and more natural
-- Still detectable by experienced reviewers
-- Adobe Stock prefers original high-resolution images
-- Risk of rejection if detected as upscaled
+### ⚠️ Limitations & Important Notes
 
-### ✅ Recommended for Adobe Stock
+**This tool uses mathematical interpolation, NOT AI:**
+- Only stretches existing pixels mathematically
+- Cannot generate new detail or information
+- Results appear artificially enlarged at high scale factors
+- May show blur, artifacts, or lack of sharpness
+- Not suitable for professional printing or stock photography
 
-1. **Use Original High-Resolution Images**
-   - Shoot at highest camera resolution
-   - Minimum 4MP (megapixels)
+**When to Use Professional Tools:**
+- High-resolution print production
+- Stock photography submissions
+- Professional graphic design projects
+- Medical or scientific imaging
+- Restoration of important photographs
+
+### 🎯 Quality Recommendations
+
+**For Best Results:**
+1. **Use Original High-Resolution Sources**
+   - Start with highest quality available
+   - Minimum 2-4MP for good results
    - Native resolution from camera/scanner
 
-2. **Acceptable Enhancement**
+2. **Appropriate Enhancements**
    - Color correction and grading
    - Contrast and exposure adjustments
-   - Noise reduction (moderate)
+   - Moderate sharpening only
    - Lens correction
 
-3. **Avoid**
-   - Upscaling from lower resolution
-   - Heavy artificial sharpening
-   - Excessive noise reduction
-   - Generated/AI-created details
-
-**Important:** Adobe Stock has quality requirements and may reject upscaled images. Always check their current [submission guidelines](https://stock.adobe.com/contributor).
+3. **Avoid Over-Processing**
+   - Don't upscale more than 4x
+   - Don't apply heavy artificial sharpening
+   - Don't use as substitute for high-res originals
+   - Don't expect AI-level quality
 
 ## Installation
 
@@ -264,7 +272,7 @@ A web-based application for upscaling images with tracing and conversion feature
 - Scale factor: 2-3x
 - Interpolation: Bicubic
 - Tracing: Enabled with 2-4 colors
-- Format: EPS for editing in Illustrator/CorelDRAW
+- Format: EPS for professional vector editing
 
 #### For Pixel Art
 - Scale factor: 2x, 4x, or 8x (integer multiples)
@@ -279,7 +287,7 @@ A web-based application for upscaling images with tracing and conversion feature
 - Tracing: Optional for vector style
 - Format: EPS for professional printing
 
-**Note:** For true professional quality, consider AI-based tools like Upscayl or Topaz Gigapixel AI.
+**Note:** For true professional quality, consider AI-based upscaling tools.
 
 ## Technical Details
 
@@ -337,7 +345,7 @@ A web-based application for upscaling images with tracing and conversion feature
 - Contains raster image data
 - Hex-encoded RGB values
 - BoundingBox for dimensions
-- Compatible with Adobe Illustrator, CorelDRAW, Inkscape
+- Compatible with professional vector editing software
 
 **Structure:**
 ```postscript
@@ -461,12 +469,12 @@ A web-based application for upscaling images with tracing and conversion feature
 - Try a different browser with more memory
 - Process fewer images at once in bulk mode
 
-### Issue: EPS file won't open in Illustrator
+### Issue: EPS file won't open in vector editor
 
 **Solution:**
 - EPS contains raster data, not true vectors
 - Use "Place" or "Import" instead of "Open"
-- Try opening in other software (Photoshop, GIMP)
+- Try opening in other compatible software
 - For true vectors, use dedicated tracing software
 
 ### Issue: Colors look different after processing
@@ -566,9 +574,9 @@ Potential features for future development:
 ### What This Tool CANNOT Do
 
 1. **Add Real Detail**: Mathematical interpolation cannot create true details, only guesses
-2. **Match AI Quality**: Results won't match AI-based upscalers like Upscayl or Topaz
+2. **Match AI Quality**: Results won't match AI-based upscaling tools
 3. **Professional Printing**: Not suitable for high-end print production
-4. **Adobe Stock**: Unlikely to meet stock photo quality requirements
+4. **Stock Photography**: Unlikely to meet commercial stock photo quality requirements
 5. **Extreme Upscaling**: 8x+ upscaling will show significant quality loss
 
 ### What This Tool CAN Do Well
@@ -585,28 +593,29 @@ If you need higher quality upscaling:
 
 ### AI-Powered Desktop Applications
 
-**Upscayl** (Free, Open Source)
-- GitHub: https://github.com/upscayl/upscayl
-- Uses Real-ESRGAN AI models
-- Free and open source
-- Requires Vulkan GPU
+**Open Source Options:**
+- Real-ESRGAN based tools
+- Free and powerful
+- Requires compatible GPU
 
-**Topaz Gigapixel AI** (Paid)
-- Professional AI upscaling
+**Commercial Solutions:**
+- Professional AI upscaling software
 - Best-in-class quality
-- Expensive ($99+)
-- Windows/Mac desktop app
+- Paid licenses
+- Desktop applications
 
-**Adobe Photoshop** (Subscription)
-- Neural Filters with AI upscaling
-- Part of Creative Cloud
+**Image Editing Suites:**
+- Professional photo editors with AI features
+- Part of creative software bundles
 - Good but not specialized
 
 ### Online Services
 
-**Let's Enhance** - https://letsenhance.io/
-**Bigjpg** - https://bigjpg.com/
-**waifu2x** - https://waifu2x.udp.jp/ (anime/art)
+Various online AI upscaling services are available that offer:
+- Cloud-based processing
+- No installation required
+- Subscription or pay-per-use models
+- API integration options
 
 ### When to Use Each
 
@@ -635,9 +644,9 @@ If you need higher quality upscaling:
 - JSZip library by Stuart Knightley
 
 **Inspired by:**
-- Upscayl (Real-ESRGAN based upscaler)
-- Adobe Photoshop interpolation methods
-- Traditional image processing algorithms
+- Real-ESRGAN AI upscaling research
+- Modern image processing techniques
+- Traditional interpolation algorithms
 
 ## License
 
@@ -675,7 +684,7 @@ This project is provided as-is for educational and personal use.
 
 ---
 
-**Disclaimer:** This tool uses mathematical interpolation, not AI. Results may not match professional AI upscaling tools. For Adobe Stock or professional printing, use original high-resolution images or AI-based upscalers. Always verify quality requirements before submission.
+**Disclaimer:** This tool uses mathematical interpolation, not AI. Results may not match professional AI upscaling tools. For commercial stock photography or professional printing, use original high-resolution images or AI-based upscalers. Always verify quality requirements before submission.
 
 **Version:** 1.0.0
 **Last Updated:** October 2025
